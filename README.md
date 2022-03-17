@@ -24,3 +24,6 @@ EqStream APIのドキュメント（令和最新版 : 公式）
 ### 例2 (強震モニターの震度情報)
 沖縄県で震度1が観測されたとき
 `{"type":"intensity_report","time":"1647553950000","max_index":0,"intensity_list":[{"intensity":"0","index":0,"region_list":["沖縄"]}]}`
+
+## お前は誰
+作成者: [nexryai](https://twitter.com/nexryai)
