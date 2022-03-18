@@ -49,6 +49,8 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 `{"type":"pga_alert","time":"1647638187472","max_pga":0.033,"new":true,"estimated_intensity":0,"region_list":["福島"]}`
 
 ## 実際の例
+[この地震](https://typhoon.yahoo.co.jp/weather/jp/earthquake/20220318232520.html)発生時の配信データ<br>
+
 ```
 {"type":"pga_alert","time":"1647645924074","max_pga":1.156,"new":true,"estimated_intensity":1,"region_list":["岩手"]}
 {"type":"eew","time":"1647645917000","report":"1","epicenter":"岩手県沖","depth":"10km","magnitude":5.6,"latitude":40,"longitude":142,"intensity":"5弱","index":5}
