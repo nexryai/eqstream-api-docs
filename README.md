@@ -29,11 +29,11 @@ EqStream APIのドキュメント（令和最新版 : 公式）
 ```
 
 {
-	"areas": [
-   { grade: 'Watch', immediate: true, name: '宮城県' },
-   { grade: 'Watch', immediate: true, name: '福島県' }
-	],
-	"time": 1647611887107
+   "areas": [
+   	{ grade: 'Watch', immediate: true, name: '宮城県' },
+   	{ grade: 'Watch', immediate: true, name: '福島県' }
+   ],
+   "time": 1647611887107
 }
 
 ```
