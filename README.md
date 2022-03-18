@@ -28,7 +28,12 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 |  プロパティ |  内容  |
 | ---- | ---- |
 |  `report`  |  第何報かです。最終報の場合`final`になります。
-|  `epicenter`  |  震源地です  |
+|  `epicenter`  |  震源地の地名  |
+|  `depth`  |  震源の深さ  |
+|  `magnitude`  |  マグニチュード  |
+|  `latitude`  |  震源の緯度  |
+|  `longitude`  |  震源の軽度  |
+|  `intensity`  |  予想最大震度  |
 
 
 例: 沖縄本島北西で最大予想震度3の地震が予報されたとき
