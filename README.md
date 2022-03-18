@@ -13,7 +13,12 @@ EqStream APIのドキュメント（令和最新版 : 公式）
 ## 配信されるjsonファイル
 
 ### 共通部分
-
+##### `type`
+eew（緊急地震速報） <br>
+tsunami（津波速報） <br>
+intensity_report（強震モニターの震度情報） <br>
+pga_alert（PGAアラート） <br>
+のいずれかの値です。
 
 
 ### 緊急地震速報 予報
