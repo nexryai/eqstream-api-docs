@@ -48,5 +48,26 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 ### PGAアラート
 `{"type":"pga_alert","time":"1647638187472","max_pga":0.033,"new":true,"estimated_intensity":0,"region_list":["福島"]}`
 
+## 実際の例
+```
+{"type":"pga_alert","time":"1647645924074","max_pga":1.156,"new":true,"estimated_intensity":1,"region_list":["岩手"]}
+{"type":"eew","time":"1647645917000","report":"1","epicenter":"岩手県沖","depth":"10km","magnitude":5.6,"latitude":40,"longitude":142,"intensity":"5弱","index":5}
+{"type":"eew","time":"1647645917000","report":"2","epicenter":"岩手県沖","depth":"10km","magnitude":5.6,"latitude":40,"longitude":142,"intensity":"5弱","index":5}
+{"type":"eew","time":"1647645917000","report":"3","epicenter":"岩手県沖","depth":"10km","magnitude":5.6,"latitude":40,"longitude":142,"intensity":"5弱","index":5}
+{"type":"eew","time":"1647645917000","report":"4","epicenter":"岩手県沖","depth":"10km","magnitude":5.8,"latitude":40,"longitude":142,"intensity":"5強","index":6}
+{"type":"eew","time":"1647645917000","report":"5","epicenter":"岩手県沖","depth":"20km","magnitude":5.8,"latitude":40,"longitude":142.1,"intensity":"5弱","index":5}
+{"type":"eew","time":"1647645917000","report":"6","epicenter":"岩手県沖","depth":"20km","magnitude":5.8,"latitude":40,"longitude":142.1,"intensity":"5弱","index":5}
+{"type":"eew","time":"1647645917000","report":"7","epicenter":"岩手県沖","depth":"20km","magnitude":5.8,"latitude":40,"longitude":142.1,"intensity":"5弱","index":5}
+{"type":"intensity_report","time":"1647645924074","max_index":4,"intensity_list":[{"intensity":"4","index":4,"region_list":["岩手"]},{"intensity":"3","index":3,"region_list":["青森"]}]}
+{"type":"eew","time":"1647645917000","report":"9","epicenter":"岩手県沖","depth":"20km","magnitude":4.9,"latitude":40,"longitude":142.1,"intensity":"5弱","index":5}
+{"type":"eew","time":"1647645917000","report":"7","epicenter":"岩手県沖","depth":"20km","magnitude":5.8,"latitude":40,"longitude":142.1,"intensity":"5弱","index":5}
+{"type":"eew","time":"1647645917000","report":"8","epicenter":"岩手県沖","depth":"20km","magnitude":5.4,"latitude":40,"longitude":142.1,"intensity":"5弱","index":5}
+{"type":"eew","time":"1647645917000","report":"9","epicenter":"岩手県沖","depth":"20km","magnitude":4.9,"latitude":40,"longitude":142.1,"intensity":"5弱","index":5}
+{"type":"eew","time":"1647645917000","report":"10","epicenter":"岩手県沖","depth":"20km","magnitude":5.2,"latitude":40,"longitude":142.1,"intensity":"5弱","index":5}
+{"type":"eew","time":"1647645917000","report":"final","epicenter":"岩手県沖","depth":"10km","magnitude":5.3,"latitude":40,"longitude":142.1,"intensity":"5弱","index":5}
+{"type":"eew","time":"1647645917000","report":"12","epicenter":"岩手県沖","depth":"10km","magnitude":5.3,"latitude":40,"longitude":142.1,"intensity":"5弱","index":5}
+{"type":"eew","time":"1647645917000","report":"final","epicenter":"岩手県沖","depth":"10km","magnitude":5.3,"latitude":40,"longitude":142.1,"intensity":"5弱","index":5}
+```
+
 ## お前は誰
 作成者: [nexryai](https://twitter.com/nexryai)
