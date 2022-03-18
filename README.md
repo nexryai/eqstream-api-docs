@@ -14,10 +14,9 @@ EqStream APIのドキュメント（令和最新版 : 公式）
 
 ### 共通部分
 ##### `type`
-eew（緊急地震速報） <br>
-tsunami（津波速報） <br>
-intensity_report（強震モニターの震度情報） <br>
-pga_alert（PGAアラート） <br>
+eew（緊急地震速報）
+tsunami（津波速報）
+intensity_report（強震モニターの震度情報）、pga_alert（PGAアラート） <br>
 のいずれかの値です。
 
 
@@ -32,7 +31,6 @@ pga_alert（PGAアラート） <br>
 
 ### 津波情報
 ```
-
 {
    "type":"tsunami",
    "areas": [
@@ -41,7 +39,6 @@ pga_alert（PGAアラート） <br>
    ],
    "time": 1647611887107
 }
-
 ```
 
 ### 強震モニターの震度情報
