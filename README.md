@@ -29,5 +29,8 @@ EqStream APIのドキュメント（令和最新版 : 公式）
 岩手、山形、宮城、福島で震度1が観測されたとき <br>
 `{"type":"intensity_report","time":"1647637944472","max_index":1,"intensity_list":[{"intensity":"1","index":1,"region_list":["岩手","山形","宮城","福島"]}]}}`
 
+### 例3 (PGAアラート)
+`{"type":"pga_alert","time":"1647638187472","max_pga":0.033,"new":true,"estimated_intensity":0,"region_list":["福島"]}`
+
 ## お前は誰
 作成者: [nexryai](https://twitter.com/nexryai)
