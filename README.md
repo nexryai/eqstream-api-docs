@@ -29,6 +29,7 @@ EqStream APIのドキュメント（令和最新版 : 公式）
 ```
 
 {
+   "type":"tsunami",
    "areas": [
    	{ grade: 'Watch', immediate: true, name: '宮城県' },
    	{ grade: 'Watch', immediate: true, name: '福島県' }
