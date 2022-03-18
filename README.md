@@ -27,7 +27,7 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 
 |  プロパティ |  内容  |
 | ---- | ---- |
-|  `report`  |  第何報かです。最終報の場合`final`になります。
+|  `report`  |  第何報か。最終報の場合`final`になります。
 |  `epicenter`  |  震源地の地名  |
 |  `depth`  |  震源の深さ  |
 |  `magnitude`  |  マグニチュード  |
