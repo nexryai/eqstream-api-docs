@@ -22,8 +22,8 @@ EqStream APIのドキュメント（令和最新版 : 公式）
 `{"type":"eew","time":"1647553950000","report":"final","epicenter":"沖縄本島北西沖","depth":"10km","magnitude":5,"latitude":26.6,"longitude":126.6,"intensity":"3","index":3}`
 
 ### 例2 (強震モニターの震度情報)
-沖縄県で震度1が観測されたとき
-`{"type":"intensity_report","time":"1647553950000","max_index":0,"intensity_list":[{"intensity":"0","index":0,"region_list":["沖縄"]}]}`
+岩手、山形、宮城、福島で震度1が観測されたとき
+`{"type":"intensity_report","time":"1647637944472","max_index":1,"intensity_list":[{"intensity":"1","index":1,"region_list":["岩手","山形","宮城","福島"]}]}}`
 
 ## お前は誰
 作成者: [nexryai](https://twitter.com/nexryai)
