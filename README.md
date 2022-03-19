@@ -99,13 +99,23 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 |  `index`  |  震度（数値）  |
 |  `region_list`  |  その震度を観測した地域一覧  |
 
-`intensity`と`index`の違いは[ここ](#`intensity`と`index`の違い)を参照
+`intensity`と`index`の違いは[ここ](#`intensity`と`index`の違い)を参照 <br>
+<br>
 
 #### 例: 岩手、山形、宮城、福島で震度1が観測されたとき
 `{"type":"intensity_report","time":"1647637944472","max_index":1,"intensity_list":[{"intensity":"1","index":1,"region_list":["岩手","山形","宮城","福島"]}]}}`
 
 ## PGAアラート
-`{"type":"pga_alert","time":"1647638187472","max_pga":0.033,"new":true,"estimated_intensity":0,"region_list":["福島"]}`
+
+|  キー  |  内容  |
+| ---- | ---- |
+|  `max_pga`  |  観測されたPGA  |
+|  `new`  |  新しいか  |
+|  `estimated_intensity`  |  推定される震度（文字列）  |
+|  `region_list`  |  地域一覧（配列）  |
+
+#### 例: PGA1.156、推定震度1の地震が岩手で観測されたとき
+`{"type":"pga_alert","time":"1647645924074","max_pga":1.156,"new":true,"estimated_intensity":1,"region_list":["岩手"]}`
 
 # 実際の例
 [この地震](https://typhoon.yahoo.co.jp/weather/jp/earthquake/20220318232520.html)発生時の配信データ<br>
