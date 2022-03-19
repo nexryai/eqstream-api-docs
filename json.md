@@ -25,7 +25,7 @@
 |  magnitude  |  マグニチュード  |
 |  latitude  |  震源の緯度  |
 |  longitude  |  震源の軽度  |
-|  intensity  |  予想最大震度（文字列）  |
+|  intensity  |  予想最大震度（string）  |
 |  index  |  予想最大震度（数値）  |
 
 
@@ -88,7 +88,7 @@
 
 |  `intensity_list`内のキー  |  内容  |
 | ---- | ---- |
-|  intensity  |  震度（文字列）  |
+|  intensity  |  震度（string）  |
 |  index  |  震度（数値）  |
 |  region_list  |  その震度を観測した地域一覧  |
 
@@ -104,7 +104,7 @@
 | ---- | ---- |
 |  max_pga  |  観測されたPGA  |
 |  new  |  新しいか  |
-|  estimated_intensity  |  推定される震度（文字列）  |
+|  estimated_intensity  |  推定される震度（数値）  |
 |  region_list  |  地域一覧（配列）  |
 
 #### 例: PGA1.156、推定震度1の地震が岩手で観測されたとき
