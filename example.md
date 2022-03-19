@@ -2,4 +2,4 @@
 ここにあるコードはコピペしても構いませんが、正確性は保証しません。
 
 ## node.js
-[例](sample.js)
+[sample.js](sample.js)
