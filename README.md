@@ -1,6 +1,3 @@
-# eqstream-api-docs
-EqStream APIのドキュメント（令和最新版 : 公式）
-
 # これはなんだ
 緊急地震速報や津波情報、震度の情報、PGAアラートなどをWebsocketでほぼ無遅延で配信する無償のAPIです。<br>
 国外のVPSで実行されているため災害に強いです。強震モニターとP2P地震情報の情報を利用しています。
@@ -140,5 +137,5 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 {"type":"eew","time":"1647645917000","report":"final","epicenter":"岩手県沖","depth":"10km","magnitude":5.3,"latitude":40,"longitude":142.1,"intensity":"5弱","index":5}
 ```
 
-## お前は誰
+# お前は誰
 作成者: [nexryai](https://twitter.com/nexryai)
