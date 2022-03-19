@@ -40,7 +40,7 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 #### `intensity`と`index`の違い
 どちらも震度を表しますが、5弱、5強、6弱、6強の際に`intensity`には文字列が入ります。`index`はプログラム内部で震度を判定するのに、`intensity`はメッセージを出力するときに使われるべきです。
 
-|  震度 |  `intensity`  |  `index`  |
+|  震度  |  `intensity`  |  `index`  |
 | ---- | ---- | ---- |
 |  1 - 4  |  1 - 4 |  1 - 4  |
 |  5弱  |  5弱 | 5 |
@@ -68,7 +68,7 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 |  `name`  |  地域名  |
 
 #### 警報の種類
-|  `grade`の値 |  内容  |
+|  `grade`の値  |  内容  |
 | ---- | ---- |
 |  `Watch`  |  津波注意報  |
 |  `Warning`  |  津波警報  |
@@ -88,12 +88,13 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 
 ## 強震モニターの震度情報
 
-|  キー |  内容  |
+|  キー  |  内容  |
 | ---- | ---- |
 |  `max_index`  |  最大震度（数値）  |
 |  `intensity_list`  |  各地域の震度情報（配列）  |
 
 |  `intensity_list`内のキー  |  内容  |
+| ---- | ---- |
 |  `intensity`  |  震度（文字列）  |
 |  `index`  |  震度（数値）  |
 |  `region_list`  |  その震度を観測した地域一覧  |
