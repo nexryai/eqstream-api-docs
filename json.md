@@ -19,14 +19,14 @@
 
 |  キー |  内容  |
 | ---- | ---- |
-|  `report`  |  第何報か。最終報の場合`final`になります。 |
-|  `epicenter`  |  震源地の地名  |
-|  `depth`  |  震源の深さ  |
-|  `magnitude`  |  マグニチュード  |
-|  `latitude`  |  震源の緯度  |
-|  `longitude`  |  震源の軽度  |
-|  `intensity`  |  予想最大震度（文字列）  |
-|  `index`  |  予想最大震度（数値）  |
+|  report  |  第何報か。最終報の場合`final`になります。 |
+|  epicenter  |  震源地の地名  |
+|  depth  |  震源の深さ  |
+|  magnitude  |  マグニチュード  |
+|  latitude  |  震源の緯度  |
+|  longitude  |  震源の軽度  |
+|  intensity  |  予想最大震度（文字列）  |
+|  index  |  予想最大震度（数値）  |
 
 
 #### `intensity`と`index`の違い
@@ -63,9 +63,9 @@
 #### 警報の種類
 |  `grade`の値  |  内容  |
 | ---- | ---- |
-|  `Watch`  |  津波注意報  |
-|  `Warning`  |  津波警報  |
-|  `MajorWarning`  |  大津波警報  |
+|  Watch  |  津波注意報  |
+|  Warning  |  津波警報  |
+|  MajorWarning  |  大津波警報  |
 
 ### 例: 宮城県と福島県に津波注意報が発表されたとき
 ```
@@ -83,14 +83,14 @@
 
 |  キー  |  内容  |
 | ---- | ---- |
-|  `max_index`  |  最大震度（数値）  |
-|  `intensity_list`  |  各地域の震度情報（配列）  |
+|  max_index  |  最大震度（数値）  |
+|  intensity_list  |  各地域の震度情報（配列）  |
 
 |  `intensity_list`内のキー  |  内容  |
 | ---- | ---- |
-|  `intensity`  |  震度（文字列）  |
-|  `index`  |  震度（数値）  |
-|  `region_list`  |  その震度を観測した地域一覧  |
+|  intensity  |  震度（文字列）  |
+|  index  |  震度（数値）  |
+|  region_list  |  その震度を観測した地域一覧  |
 
 `intensity`と`index`の違いは[ここ](#intensity%E3%81%A8index%E3%81%AE%E9%81%95%E3%81%84)を参照 <br>
 <br>
@@ -102,10 +102,10 @@
 
 |  キー  |  内容  |
 | ---- | ---- |
-|  `max_pga`  |  観測されたPGA  |
-|  `new`  |  新しいか  |
-|  `estimated_intensity`  |  推定される震度（文字列）  |
-|  `region_list`  |  地域一覧（配列）  |
+|  max_pga  |  観測されたPGA  |
+|  new  |  新しいか  |
+|  estimated_intensity  |  推定される震度（文字列）  |
+|  region_list  |  地域一覧（配列）  |
 
 #### 例: PGA1.156、推定震度1の地震が岩手で観測されたとき
 `{"type":"pga_alert","time":"1647645924074","max_pga":1.156,"new":true,"estimated_intensity":1,"region_list":["岩手"]}`
