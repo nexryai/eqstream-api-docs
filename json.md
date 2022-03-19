@@ -2,10 +2,14 @@
 
 ## 共通部分
 #### `type`
-eew（緊急地震速報）
-tsunami（津波速報）
-intensity_report（強震モニターの震度情報）、pga_alert（PGAアラート） <br>
-のいずれかの値です。
+
+|  値  |  内容  |
+| ---- | ---- |
+|  eew  |  緊急地震速報  |
+|  tsunami  |  津波速報  |
+|  intensity_report  |  強震モニターの震度情報  |
+|  pga_alert  |  PGAアラート  | 
+
 
 #### `time`
 イベントが発生した時間です。UNIX時間で表します。
