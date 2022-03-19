@@ -25,7 +25,7 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 
 ## 緊急地震速報
 
-|  プロパティ |  内容  |
+|  キー |  内容  |
 | ---- | ---- |
 |  `report`  |  第何報か。最終報の場合`final`になります。 |
 |  `epicenter`  |  震源地の地名  |
@@ -33,7 +33,7 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 |  `magnitude`  |  マグニチュード  |
 |  `latitude`  |  震源の緯度  |
 |  `longitude`  |  震源の軽度  |
-|  `intensity`  |  予想最大震度  |
+|  `intensity`  |  予想最大震度（文字列）  |
 |  `index`  |  予想最大震度（数値）  |
 
 
@@ -49,6 +49,7 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 |  6強  |  6強 | 8 |
 |  7  |  7  | 9 |
 
+
 ### 例: 沖縄本島北西で最大予想震度3の地震が予報されたとき
 ##### 第1報
 `{"type":"eew","time":"1647553950000","report":"1","epicenter":"沖縄本島北西沖","depth":"10km","magnitude":4.5,"latitude":26.6,"longitude":126.6,"intensity":"3","index":3}`
@@ -60,7 +61,7 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 
 津波の情報は`areas`という配列に格納されます。以下の表は`areas`内のプロパティ一覧です。
 
-|  プロパティ |  内容  |
+|  キー |  内容  |
 | ---- | ---- |
 |  `grade`  |  警報の種類。詳細は後述。  |
 |  `immediate`  |  既に到達・もしくは直ちに到達するか  |
@@ -86,7 +87,20 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 ```
 
 ## 強震モニターの震度情報
-岩手、山形、宮城、福島で震度1が観測されたとき <br>
+
+|  キー |  内容  |
+| ---- | ---- |
+|  `max_index`  |  最大震度（数値）  |
+|  `intensity_list`  |  各地域の震度情報（配列）  |
+
+|  `intensity_list`内のキー  |  内容  |
+|  `intensity`  |  震度（文字列）  |
+|  `index`  |  震度（数値）  |
+|  `region_list`  |  その震度を観測した地域一覧  |
+
+`intensity`と`index`の違いは[ここ](#`intensity`と`index`の違い)を参照
+
+#### 例: 岩手、山形、宮城、福島で震度1が観測されたとき
 `{"type":"intensity_report","time":"1647637944472","max_index":1,"intensity_list":[{"intensity":"1","index":1,"region_list":["岩手","山形","宮城","福島"]}]}}`
 
 ## PGAアラート
