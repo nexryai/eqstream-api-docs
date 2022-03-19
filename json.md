@@ -68,8 +68,8 @@ intensity_report（強震モニターの震度情報）、pga_alert（PGAアラ�
 {
    "type":"tsunami",
    "areas": [
-   	{ grade: 'Watch', immediate: true, name: '宮城県' },
-   	{ grade: 'Watch', immediate: true, name: '福島県' }
+   	{ "grade": 'Watch', "immediate": true, "name": '宮城県' },
+   	{ "grade": 'Watch', "immediate": true, "name": '福島県' }
    ],
    "time": 1647611887107
 }
