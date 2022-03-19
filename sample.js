@@ -40,7 +40,6 @@ function ws_connect(){
                     Object.keys(array[index]).forEach(function(key) {
 
                         switch (key) {
-
                             case 'intensity':
                                 console.log('震度' + array[index][key]);  
                                 break;
